@@ -901,7 +901,7 @@ function Success() {
   };
 
   // Percentage based on ~2000 entries
-  const percentage = Math.min(100, Math.round((progress.totalEntries / 2000) * 100));
+  const percentage = Math.min(100, Math.round(((progress.totalEntries || 0) / 2000) * 100));
 
   // Format the last scrape time for display
   const formatScrapeTime = (isoString) => {

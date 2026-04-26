@@ -191,6 +191,8 @@ app.post('/api/sync-gbox', async (req, res) => {
 
         // Set status to scraping immediately so the frontend sees it during the redirect
         scrapeState.status = 'scraping';
+        scrapeState.totalEntries = 0;
+        scrapeState.currentPage = 0;
         
         // Auto-trigger the first scrape immediately after login
         console.log('[Auto-Scrape] Login successful. Triggering first scrape automatically...');
