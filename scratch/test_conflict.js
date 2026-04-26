@@ -74,3 +74,4 @@ const sessions2 = parseSchedule(s2[0].schedule_raw);
 
 console.log('Sessions 1:', JSON.stringify(sessions1));
 console.log('Sessions 2:', JSON.stringify(sessions2));
+ 
